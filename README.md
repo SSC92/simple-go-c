@@ -20,7 +20,7 @@ You should replace the ```myc.c``` and ```myc.h``` with your own C code and head
 
 You should replace the include in ```simplescgo.go```  with your actual C code as you can see in the example. You can also use standard C library in your Golang code.
 
-```
+```go
 /*
 #include "myc.h"
 #include <stdlib.h>
@@ -28,3 +28,5 @@ You should replace the include in ```simplescgo.go```  with your actual C code a
 */
 import "C"
 ```
+
+Then you can call this package from other Go packages as stated in [my example](https://github.com/SSC92/tiny-c-go).
